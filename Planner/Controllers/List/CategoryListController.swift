@@ -21,7 +21,7 @@ class CategoryListController: UIViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellCategory", for: indexPath) as! CategoryListCell
         
-        let category = categoryDao.items[indexPath.row] //получаем каждую категорию из массива
+        let category = categoryDao.items[indexPath.row] //получаем каждую категорию из массива, чтобы отобразить название
         //если категория совпадает с текущей - показываем зеленую иконку
         
         if selectedCategory != nil && selectedCategory == category {
